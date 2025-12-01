@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan | Frontend Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="logo-text">NVTHAN</span><span class="logo-highlight">.DEV</span>
+            </div>
+            <div class="loading-animation">
+                <div class="loader"></div>
+                <div class="typing-text" id="typingText"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-effects">
+        <div class="effect effect-1"></div>
+        <div class="effect effect-2"></div>
+        <div class="effect effect-3"></div>
+        <div class="effect effect-4"></div>
+        <div class="effect effect-5"></div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="logo-text">NVTHAN</span><span class="logo-highlight">.DEV</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="connect-top">
+                <a href="mailto:nvthan.dev@gmail.com" class="website-link">
+                    <i class="fas fa-envelope"></i> nvthan.dev@gmail.com
+                </a>
+            </div>
+            <div class="bars">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <h1 class="hero-title">Hello I'm <span class="logo-highlight">Nathan</span></h1>
+                <p class="hero-subtitle">15 Years Old Frontend Developer</p>
+                <p class="hero-description">I build websites with HTML CSS JS. Currently trying to expand my skills towards full stack development</p>
+                <div class="hero-actions">
+                    <a href="#project" class="btn btn-primary">View my Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div>
+                
+                </div>
+
+                <div class="hero-image">
+                    <div class="code-snippet">
+                        <pre><code>
+const developer = {
+    name: "Nathan",
+    age: 15,
+    level: "Frontend Developer",
+    learning: "Full Stack",
+    skills: ["HTML", "CSS", "JS"],
+    project: "https://forcedentry.vercel.app/"
+};
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About <span class="logo-highlight">Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a 15-year-old self-taught developer who discovered my passion for coding. Starting with basic HTML and CSS, I've been teaching myself web development through online resources and hands-on projects.</p>
+                        <p>My journey has been about constant learning - from my first lines of code to building complete websites. I'm now focusing on mastering frontend technologies while learning backend development to become a full stack developer</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Germany</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>Started at 13</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="profile-card">
+                            <div class="profile-header">
+                                <h3>Nathan</h3>
+                                <p>Frontend Developer</p>
+                                <div class="age-badge">15 years old</div>
+                            </div>
+                            <div class="profile-info">
+                                <p><i class="fas fa-envelope"></i> nvthan.dev@gmail.com</p>
+                                <p><i class="fas fa-code"></i>Frontend Developer</p>
+                                <p><i class="fas fa-eye"></i>Self Taught</p>
+                                <p><i class="fas fa-rocket"></i>Learning Full Stack</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">My <span class="logo-highlight">Skills</span></h2>
+                <p class="section-subtitle">Click on any Icon</p>
+                
+                <div class="currently-learning">
+                    <h3><i class="fas fa-graduation-cap"></i> Currently Learning</h3>
+                    <div class="learning-items">
+                        <div class="learning-item">
+                            <div class="learning-icon react">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="learning-info">
+                                <h4>React</h4>
+                                <p>Frontend library for modern UIs</p>
+                                <div class="learning-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 5%"></div>
+                                    </div>
+                                    <span>5%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learning-item">
+                            <div class="learning-icon tailwind">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" class="tailwind-svg">
+                                    <path fill="#06B6D4" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"/>
+                                </svg>
+                            </div>
+                            <div class="learning-info">
+                                <h4>Tailwind</h4>
+                                <p>Tailwind is a utility-first framework that lets me build modern websites quickly.</p>
+                                <div class="learning-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 5%"></div>
+                                    </div>
+                                    <span>5%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learning-item">
+                            <div class="learning-icon node">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="learning-info">
+                                <h4>Node.js</h4>
+                                <p>JS runtime for backend</p>
+                                <div class="learning-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 1%"></div>
+                                    </div>
+                                    <span>0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-display">
+                        <div class="skills-grid" id="skillsGrid">
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <div class="skill-info-card">
+                            <div class="skill-icon-large" id="skillIcon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3 id="skillName">Javascript</h3>
+                            <p class="skill-category" id="skillCategory">Programming Language</p>
+                            <div class="proficiency-display">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" id="proficiencyFill"></div>
+                                </div>
+                                <div class="proficiency-text">
+                                    <span id="proficiencyLevel">Intermediate</span>
+                                    <span id="proficiencyPercent">55%</span>
+                                </div>
+                            </div>
+                            <div class="skill-description" id="skillDescription">
+                                Used to build interactive websites.
+                            </div>
+                            <div class="projects-using">
+                                <h4>Used in Projects:</h4>
+                                <ul id="skillProjects">
+                                    <li>Forced Entry Website</li>
+                                    <li>This Portfolio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="section project-section">
+            <div class="container">
+                <h2 class="section-title">My <span class="highlight">Project</span></h2>
+                <p class="section-subtitle">Built website for a game Hunterz Studios is developing.</p>
+                <div class="project-showcase">
+                    <div class="project-main">
+                        <div class="project-image-container">
+                            <img src="image.png" alt="Forced Entry Website" class="project-main-image">
+                            <div class="project-overlay">
+                                <a href="https://forcedentry.vercel.app/" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Visit Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Forced Entry Website</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                            <p class="project-description">
+                                A fully responsive promotional website for Hunterz Studios' game, built with HTML, CSS, and JavaScript and deployed on Vercel.
+                            </p>
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fa-solid fa-desktop"></i>
+                                    <div>
+                                        <h4>Device</h4>
+                                        <p>Works on PC</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-code"></i>
+                                    <div>
+                                        <h4>Code</h4>
+                                        <p>well organized & clean</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://forcedentry.vercel.app/" target="_blank" class="project-link-btn">
+                                    <i class="fas fa-external-link-alt"></i> Visit Link Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">I'm always open to learning opportunities, feedback, or just a chat about coding!</p>
+                <div class="contact-simple">
+                    <div class="contact-email-main">
+                        <div class="email-icon-large">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Me</h3>
+                        <a href="mailto:nvthan.dev@gmail.com" class="email-link-large">
+                            nvthan.dev@gmail.com
+                        </a>
+                        <p class="contact-note">Feel free to reach out for collaboration, advice, or just to connect!</p>
+                    </div>
+                    <div class="contact-links">
+                        <div class="contact-link-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>My Domain</h4>
+                                <a href="https://nvthan.dev" target="_blank">nvthan.dev</a>
+                            </div>
+                        </div>
+                        <div class="contact-link-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>My Project</h4>
+                                <a href="https://forcedentry.vercel.app/" target="_blank">forcedentry.vercel.app</a>
+                            </div>
+                        </div>
+                        <div class="contact-link-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>About Me</h4>
+                                <p>15 year old frontend developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">NVTHAN</span><span class="logo-highlight">.DEV</span>
+                    <p class="footer-motto">Learning full stack</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-email">
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Built with HTML CSS & JS</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
