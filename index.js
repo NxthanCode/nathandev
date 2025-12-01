@@ -9,10 +9,8 @@ window.addEventListener('load', function() {
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-
     function typeEffect() {
         const currentText = texts[textIndex];
-
         if (isDeleting) {
             typingText.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
@@ -20,7 +18,6 @@ window.addEventListener('load', function() {
             typingText.textContent = currentText.substring(0, charIndex + 1);
             charIndex++;
         }
-
         if (!isDeleting && charIndex === currentText.length) {
             isDeleting = true;
             setTimeout(typeEffect, 1500);
@@ -32,10 +29,8 @@ window.addEventListener('load', function() {
             setTimeout(typeEffect, isDeleting ? 50 : 100);
         }
     }
-
     setTimeout(() => {
         typeEffect();
-        
         setTimeout(() => {
             loadingScreen.classList.add('fade-out');
             setTimeout(() => {
@@ -44,33 +39,26 @@ window.addEventListener('load', function() {
         }, 3000);
     }, 500);
 });
-
 document.addEventListener('DOMContentLoaded', function() {
-    //document.getElementById('currentYear').textContent = new Date().getFullYear();
-
     const bars = document.querySelector('.bars');
     const navMenu = document.querySelector('.nav-menu');
-
     if (bars) {
         bars.addEventListener('click', function() {
             bars.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
     }
-
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             bars.classList.remove('active');
             navMenu.classList.remove('active');
         });
     });
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({
@@ -80,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
     const skillsData = [
         {
             id: 1,
@@ -110,7 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
             projects: ["Interactive Websites", "Web Applications", "Dynamic Content"]
         },
     ];
-
     const skillsGrid = document.getElementById('skillsGrid');
     if (skillsGrid) {
         skillsData.forEach(skill => {
@@ -237,3 +223,67 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+const reviewsData = [
+    {
+        id: 1,
+        text: "This boy is really talented at what he does. He's the guy you go to when you need anything complex or highly functional. 10/10 for sure.",
+        name: "Lucas",
+        role: "Friend",
+        date: "",
+        emoji: "",
+    },
+    {
+        id: 2,
+        text: "Personally, I'd rate it 7/10 - for design just my personal opinion. But in terms of functionality, it's a 10/10. It's really good.",
+        name: "Jamie",
+        role: "Friend",
+        date: "",
+        emoji: "",
+    },
+];
+const reviewsMarquee = document.getElementById('reviewsMarquee');
+    
+if (reviewsMarquee) {
+    reviewsData.forEach((review) => {
+        const reviewCard = document.createElement('div');
+        reviewCard.className = 'review-card';
+        reviewCard.innerHTML = `
+            <div class="review-content">
+                <div class="speech-bubble">
+                    <p class="review-text">"${review.text}"</p>
+                </div>
+            </div>
+            <div class="reviewer-info">
+                <div class="reviewer-avatar">
+                    ${review.emoji}
+                </div>
+                <div class="reviewer-details">
+                    <h4>${review.name}</h4>
+                    <div class="reviewer-role">${review.role}</div>
+                    <div class="review-date">${review.date}</div>
+                </div>
+            </div>
+        `;
+        reviewsMarquee.appendChild(reviewCard);
+    });
+    
+
+    const marqueeContent = reviewsMarquee.innerHTML;
+    reviewsMarquee.innerHTML += marqueeContent;
+    
+    function setMarqueeSpeed() {
+        const cardWidth = 300;
+        const gap = 30; 
+        const totalCards = reviewsData.length * 2; 
+        const totalWidth = (cardWidth * totalCards) + (gap * (totalCards - 1));
+        
+        const speedFactor = 80;
+        const duration = totalWidth / speedFactor;
+        
+        reviewsMarquee.style.animationDuration = `${duration}s`;
+    }
+    
+    setMarqueeSpeed();
+    
+    window.addEventListener('resize', setMarqueeSpeed);
+}
