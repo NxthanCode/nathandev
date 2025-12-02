@@ -241,7 +241,7 @@ const rdata = [
     },
     {
         id: 3,
-        text: "9/10, because when you think about it youre only 15 and you can already do stuff like this",
+        text: "9/10, because when you think about it youre only 16 and you can already do stuff like this",
         name: "Kacper",
         role: "Friend",
         date: "",
@@ -257,7 +257,7 @@ const rdata = [
     },
     {
         id: 5,
-        text: "Nathan's got a passion for programming, ever since I have known him he has always been programming something and I must say he's very talented, especially for only 15 years of age. 10/10",
+        text: "Nathan's got a passion for programming, ever since I have known him he has always been programming something and I must say he's very talented, especially for only 16 years of age. 10/10",
         name: "Jake",
         role: "Friend",
         date: "",
