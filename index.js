@@ -255,6 +255,14 @@ const reviewsData = [
         role: "Friend",
         date: "",
         emoji: "",
+    },
+    {
+        id: 5,
+        text: "Nathan's got a passion for programming, ever since I have known him he has always been programming something and I must say he's very talented, especially for only 15 years of age. 10/10",
+        name: "Jake",
+        role: "Friend",
+        date: "",
+        emoji: "",
     }
 
 ];
