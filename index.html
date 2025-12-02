@@ -11,63 +11,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <span class="logo-text">NVTHAN</span><span class="logo-highlight">.DEV</span>
+    <div class="load" id="load">
+        <div class="lcont">
+            <div class="logo">
+                <span class="ltxt">NVTHAN</span><span class="lblu">.DEV</span>
             </div>
-            <div class="loading-animation">
-                <div class="loader"></div>
-                <div class="typing-text" id="typingText"></div>
+            <div class="lanim">
+                <div class="spin"></div>
+                <div class="ttext" id="ttext"></div>
             </div>
         </div>
     </div>
-    <div class="bg-effects">
-        <div class="effect effect-1"></div>
-        <div class="effect effect-2"></div>
-        <div class="effect effect-3"></div>
-        <div class="effect effect-4"></div>
-        <div class="effect effect-5"></div>
+    <div class="beff">
+        <div class="eff e1"></div>
+        <div class="eff e2"></div>
+        <div class="eff e3"></div>
+        <div class="eff e4"></div>
+        <div class="eff e5"></div>
     </div>
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-brand">
-                <span class="logo-text">NVTHAN</span><span class="logo-highlight">.DEV</span>
+    <header class="head">
+        <nav class="nav">
+            <div class="nlogo">
+                <span class="ltxt">NVTHAN</span><span class="lblu">.DEV</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#project" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="#reviews" class ="nav-link">Reviews</a></li>
+            <ul class="nlist">
+                <li><a href="#home" class="nitem act">Home</a></li>
+                <li><a href="#abt" class="nitem">About</a></li>
+                <li><a href="#skl" class="nitem">Skills</a></li>
+                <li><a href="#proj" class="nitem">Projects</a></li>
+                <li><a href="#cont" class="nitem">Contact</a></li>
+                <li><a href="#rev" class="nitem">Reviews</a></li>
             </ul>
-            <div class="connect-top">
-                <a href="mailto:nvthandev@proton.me" class="website-link">
+            <div class="ncont">
+                <a href="mailto:nvthandev@proton.me" class="elink">
                     <i class="fas fa-envelope"></i> nvthandev@proton.me
                 </a>
             </div>
-            <div class="bars">
+            <div class="menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
         </nav>
     </header>
-    <main class="main-content">
-        <section id="home" class="section hero-section">
-            <div class="container">
-                <h1 class="hero-title">Hello I'm <span class="logo-highlight">Nathan</span></h1>
-                <p class="hero-subtitle">15 Years Old Frontend Developer</p>
-                <p class="hero-description">I build websites with HTML CSS JS. Currently trying to expand my skills towards full stack development</p>
-                <div class="hero-actions">
-                    <a href="#project" class="btn btn-primary">View my Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <main class="main">
+        <section id="home" class="sect hero">
+            <div class="cont">
+                <h1 class="htit">Hello I'm <span class="lblu">Nathan</span></h1>
+                <p class="hsub">15 Years Old Frontend Developer</p>
+                <p class="hdesc">I build websites with HTML CSS JS. Currently trying to expand my skills towards full stack development</p>
+                <div class="hbtn">
+                    <a href="#proj" class="btn prim">View my Projects</a>
+                    <a href="#cont" class="btn sec">Contact Me</a>
                 </div>
-                <div>
-                </div>
-                <div class="hero-image">
-                    <div class="code-snippet">
+                <div class="hcode">
+                    <div class="code">
                         <pre><code>
 const developer = {
     name: "Nathan",
@@ -82,36 +80,36 @@ const developer = {
                 </div>
             </div>
         </section>
-        <section id="about" class="section about-section">
-            <div class="container">
-                <h2 class="section-title">About <span class="logo-highlight">Me</span></h2>
-                <div class="about-content">
-                    <div class="about-text">
+        <section id="abt" class="sect abt">
+            <div class="cont">
+                <h2 class="stit">About <span class="lblu">Me</span></h2>
+                <div class="acont">
+                    <div class="atext">
                         <p>I'm a 15-year-old self-taught developer who discovered my passion for coding. Starting with basic HTML and CSS, I've been teaching myself web development through online resources and hands-on projects.</p>
                         <p>My journey has been about constant learning - from my first lines of code to building complete websites. I'm now focusing on mastering frontend technologies while learning backend development to become a full stack developer</p>
-                        <div class="about-details">
-                            <div class="detail-item">
+                        <div class="ainfo">
+                            <div class="info">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <span>Germany</span>
                             </div>
-                            <div class="detail-item">
+                            <div class="info">
                                 <i class="fa-regular fa-calendar"></i>
                                 <span>Started at 13</span>
                             </div>
-                            <div class="detail-item">
+                            <div class="info">
                                 <i class="fas fa-eye"></i>
                                 <span>Full Stack Developer</span>
                             </div>
                         </div>
                     </div>
-                    <div class="about-image">
-                        <div class="profile-card">
-                            <div class="profile-header">
+                    <div class="acard">
+                        <div class="prof">
+                            <div class="phead">
                                 <h3>Nathan</h3>
                                 <p>Frontend Developer</p>
-                                <div class="age-badge">15 years old</div>
+                                <div class="age">15 years old</div>
                             </div>
-                            <div class="profile-info">
+                            <div class="pinfo">
                                 <p><i class="fas fa-envelope"></i> nvthandev@proton.me</p>
                                 <p><i class="fas fa-code"></i>Frontend Developer</p>
                                 <p><i class="fas fa-eye"></i>Self Taught</p>
@@ -122,55 +120,55 @@ const developer = {
                 </div>
             </div>
         </section>
-        <section id="skills" class="section skills-section">
-            <div class="container">
-                <h2 class="section-title">My <span class="logo-highlight">Skills</span></h2>
-                <p class="section-subtitle">Click on any Icon</p>
-                <div class="currently-learning">
+        <section id="skl" class="sect skl">
+            <div class="cont">
+                <h2 class="stit">My <span class="lblu">Skills</span></h2>
+                <p class="ssub">Click on any Icon</p>
+                <div class="learn">
                     <h3><i class="fas fa-graduation-cap"></i> Currently Learning</h3>
-                    <div class="learning-items">
-                        <div class="learning-item">
-                            <div class="learning-icon react">
+                    <div class="llist">
+                        <div class="litem">
+                            <div class="licon react">
                                 <i class="fab fa-react"></i>
                             </div>
-                            <div class="learning-info">
+                            <div class="linfo">
                                 <h4>React</h4>
                                 <p>Frontend library for modern UIs</p>
-                                <div class="learning-progress">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 5%"></div>
+                                <div class="lprog">
+                                    <div class="pbar">
+                                        <div class="pfill" style="width: 5%"></div>
                                     </div>
                                     <span>5%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="learning-item">
-                            <div class="learning-icon tailwind">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" class="tailwind-svg">
+                        <div class="litem">
+                            <div class="licon twind">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" class="ticon">
                                     <path fill="#06B6D4" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"/>
                                 </svg>
                             </div>
-                            <div class="learning-info">
+                            <div class="linfo">
                                 <h4>Tailwind</h4>
                                 <p>Tailwind is a utility-first framework that lets me build modern websites quickly.</p>
-                                <div class="learning-progress">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 5%"></div>
+                                <div class="lprog">
+                                    <div class="pbar">
+                                        <div class="pfill" style="width: 5%"></div>
                                     </div>
                                     <span>5%</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="learning-item">
-                            <div class="learning-icon node">
+                        <div class="litem">
+                            <div class="licon node">
                                 <i class="fab fa-node-js"></i>
                             </div>
-                            <div class="learning-info">
+                            <div class="linfo">
                                 <h4>Node.js</h4>
                                 <p>JS runtime for backend</p>
-                                <div class="learning-progress">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" style="width: 1%"></div>
+                                <div class="lprog">
+                                    <div class="pbar">
+                                        <div class="pfill" style="width: 1%"></div>
                                     </div>
                                     <span>0%</span>
                                 </div>
@@ -178,33 +176,33 @@ const developer = {
                         </div>
                     </div>
                 </div>
-                <div class="skills-container">
-                    <div class="skills-display">
-                        <div class="skills-grid" id="skillsGrid">
+                <div class="scont">
+                    <div class="sgridc">
+                        <div class="sgrid" id="sgrid">
                         </div>
                     </div>
-                    <div class="skill-details">
-                        <div class="skill-info-card">
-                            <div class="skill-icon-large" id="skillIcon">
+                    <div class="sdet">
+                        <div class="scard">
+                            <div class="sicon" id="sicon">
                                 <i class="fab fa-js"></i>
                             </div>
-                            <h3 id="skillName">Javascript</h3>
-                            <p class="skill-category" id="skillCategory">Programming Language</p>
-                            <div class="proficiency-display">
-                                <div class="proficiency-bar">
-                                    <div class="proficiency-fill" id="proficiencyFill"></div>
+                            <h3 id="sname">Javascript</h3>
+                            <p class="stype" id="stype">Programming Language</p>
+                            <div class="sprog">
+                                <div class="pbar">
+                                    <div class="pfill" id="pfill"></div>
                                 </div>
-                                <div class="proficiency-text">
-                                    <span id="proficiencyLevel">Intermediate</span>
-                                    <span id="proficiencyPercent">55%</span>
+                                <div class="ptext">
+                                    <span id="plev">Intermediate</span>
+                                    <span id="pper">55%</span>
                                 </div>
                             </div>
-                            <div class="skill-description" id="skillDescription">
+                            <div class="sdesc" id="sdesc">
                                 Used to build interactive websites.
                             </div>
-                            <div class="projects-using">
+                            <div class="sproj">
                                 <h4>Used in Projects:</h4>
-                                <ul id="skillProjects">
+                                <ul id="sproj">
                                     <li>Forced Entry Website</li>
                                     <li>This Portfolio</li>
                                 </ul>
@@ -214,53 +212,49 @@ const developer = {
                 </div>
             </div>
         </section>
-        <section id="project" class="section project-section">
-            <div class="container">
-                <h2 class="section-title">My <span class="highlight">Project</span></h2>
-                <p class="section-subtitle">Built website for a game Hunterz Studios is developing.</p>
-                <div class="project-showcase">
-                    <div class="project-main">
-                        <div class="project-image-container">
-                            <img src="image.png" alt="Forced Entry Website" class="project-main-image">
-                            <div class="project-overlay">
-                                <a href="https://forcedentry.vercel.app/" target="_blank" class="btn btn-primary">
+        <section id="proj" class="sect proj">
+            <div class="cont">
+                <h2 class="stit">My <span class="lblu">Project</span></h2>
+                <p class="ssub">Built website for a game Hunterz Studios is developing.</p>
+                <div class="pshow">
+                    <div class="pmain">
+                        <div class="pimg">
+                            <img src="image.png" alt="Forced Entry Website" class="pimgm">
+                            <div class="pover">
+                                <a href="https://forcedentry.vercel.app/" target="_blank" class="btn prim">
                                     <i class="fas fa-external-link-alt"></i> Visit Site
                                 </a>
                             </div>
                         </div>
-                        <div class="project-details">
+                        <div class="pinfo">
                             <h3>Forced Entry Website</h3>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JS</span>
-                                <span class="tech-tag">Vercel</span>
+                            <div class="ptech">
+                                <span class="ttag">HTML</span>
+                                <span class="ttag">CSS</span>
+                                <span class="ttag">JS</span>
+                                <span class="ttag">Vercel</span>
                             </div>
-                            <p class="project-description">
+                            <p class="pdesc">
                                 A fully responsive promotional website for Hunterz Studios' game, built with HTML, CSS, and JavaScript and deployed on Vercel.
                             </p>
-                            <div class="project-features">
-                                <div class="feature">
+                            <div class="pfeat">
+                                <div class="feat">
                                     <i class="fa-solid fa-desktop"></i>
                                     <div>
                                         <h4>Device</h4>
                                         <p>Works on PC</p>
                                     </div>
                                 </div>
-                                <div class="feature">
+                                <div class="feat">
                                     <i class="fas fa-code"></i>
                                     <div>
                                         <h4>Code</h4>
                                         <p>well organized & clean</p>
                                     </div>
                                 </div>
-                                <div class="feature">
-                                    <div>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="https://forcedentry.vercel.app/" target="_blank" class="project-link-btn">
+                            <div class="plink">
+                                <a href="https://forcedentry.vercel.app/" target="_blank" class="plinkb">
                                     <i class="fas fa-external-link-alt"></i> Visit Link Website
                                 </a>
                             </div>
@@ -269,37 +263,37 @@ const developer = {
                 </div>
             </div>
         </section>
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
-                <p class="section-subtitle">I'm always open to learning opportunities, feedback, or just a chat about coding!</p>
-                <div class="contact-simple">
-                    <div class="contact-email-main">
-                        <div class="email-icon-large">
+        <section id="cont" class="sect cont">
+            <div class="cont">
+                <h2 class="stit">Get in <span class="lblu">Touch</span></h2>
+                <p class="ssub">I'm always open to learning opportunities, feedback, or just a chat about coding!</p>
+                <div class="ccont">
+                    <div class="cmain">
+                        <div class="eicon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h3>Email Me</h3>
-                        <a href="mailto:nvthandev@proton.me" class="email-link-large">
+                        <a href="mailto:nvthandev@proton.me" class="elinkb">
                             nvthandev@proton.me
                         </a>
-                        <p class="contact-note">Feel free to reach out for collaboration, advice, or just to connect!</p>
+                        <p class="cnote">Feel free to reach out for collaboration, advice, or just to connect!</p>
                     </div>
-                    <div class="contact-links">
-                        <div class="contact-link-item">
+                    <div class="clink">
+                        <div class="citem">
                             <i class="fas fa-globe"></i>
                             <div>
                                 <h4>My Domain</h4>
                                 <a href="https://nvthan.dev" target="_blank">nvthan.dev</a>
                             </div>
                         </div>
-                        <div class="contact-link-item">
+                        <div class="citem">
                             <i class="fas fa-code"></i>
                             <div>
                                 <h4>My Project</h4>
                                 <a href="https://forcedentry.vercel.app/" target="_blank">forcedentry.vercel.app</a>
                             </div>
                         </div>
-                        <div class="contact-link-item">
+                        <div class="citem">
                             <i class="fas fa-user"></i>
                             <div>
                                 <h4>About Me</h4>
@@ -310,35 +304,33 @@ const developer = {
                 </div>
             </div>
         </section>
-        <section id="reviews" class="section reviews-section">
-            <div class="container">
-                <h2 class="section-title">What <span class="highlight">Friends Say</span></h2>
-                <p class="section-subtitle">Reviews from people who know my work</p>
-                <div class="reviews-marquee-wrapper">
-                    <div class="reviews-marquee" id="reviewsMarquee">
+        <section id="rev" class="sect rev">
+            <div class="cont">
+                <h2 class="stit">What <span class="lblu">Friends Say</span></h2>
+                <p class="ssub">Reviews from people who know my work</p>
+                <div class="rcont">
+                    <div class="rslide" id="rslide">
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-text">NVTHAN</span><span class="logo-highlight">.DEV</span>
-                    <p class="footer-motto">Learning full stack</p>
+    <footer class="foot">
+        <div class="cont">
+            <div class="fcont">
+                <div class="flogo">
+                    <span class="ltxt">NVTHAN</span><span class="lblu">.DEV</span>
+                    <p class="fmoto">Learning full stack</p>
                 </div>
-                <div class="footer-links">
+                <div class="flink">
                     <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#project">Project</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-email">
+                    <a href="#abt">About</a>
+                    <a href="#skl">Skills</a>
+                    <a href="#proj">Project</a>
+                    <a href="#cont">Contact</a>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="fbot">
                 <p>Built with HTML CSS & JS</p>
             </div>
         </div>
