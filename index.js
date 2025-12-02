@@ -240,6 +240,23 @@ const reviewsData = [
         date: "",
         emoji: "",
     },
+    {
+        id: 3,
+        text: "9/10, because when you think about it youre only 15 and you can already do stuff like this",
+        name: "Kacper",
+        role: "Friend",
+        date: "",
+        emoji: "",
+    },
+    {
+        id: 4,
+        text: "This young guy’s website is packed with love fun sweat and pure passion. It’s a strong 9 out of 10 overall. Go check him out!",
+        name: "Arseny",
+        role: "Friend",
+        date: "",
+        emoji: "",
+    }
+
 ];
 const reviewsMarquee = document.getElementById('reviewsMarquee');
     
