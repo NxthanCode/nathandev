@@ -3,48 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan | Frontend Dev</title>
+    <title>Nathan | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 </head>
 <body>
     <div class="load" id="load">
         <div class="lcont">
             <div class="logo">
-                <span class="ltxt">NVTHAN</span><span class="lblu">.DEV</span>
+                <span class="logo-glow">N</span>
+                <span class="logo-text">VTHAN<span class="logo-dot">.</span>DEV</span>
             </div>
             <div class="lanim">
-                <div class="spin"></div>
+                <div class="spin-ring">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                </div>
                 <div class="ttext" id="ttext"></div>
             </div>
         </div>
     </div>
     <div class="beff">
-        <div class="eff e1"></div>
-        <div class="eff e2"></div>
-        <div class="eff e3"></div>
-        <div class="eff e4"></div>
-        <div class="eff e5"></div>
+        <canvas id="gradient-canvas"></canvas>
+        <div class="particles-container" id="particles"></div>
+        <div class="glow-overlay"></div>
     </div>
     <header class="head">
         <nav class="nav">
             <div class="nlogo">
-                <span class="ltxt">NVTHAN</span><span class="lblu">.DEV</span>
+                <span class="nlogo-text">NVTHAN<span class="nlogo-dot">.</span>DEV</span>
             </div>
             <ul class="nlist">
-                <li><a href="#home" class="nitem act">Home</a></li>
-                <li><a href="#abt" class="nitem">About</a></li>
-                <li><a href="#skl" class="nitem">Skills</a></li>
-                <li><a href="#proj" class="nitem">Projects</a></li>
-                <li><a href="#cont" class="nitem">Contact</a></li>
-                <li><a href="#rev" class="nitem">Reviews</a></li>
+                <li><a href="#home" class="nitem act">
+                    <span class="nicon"><i class="fas fa-home"></i></span>
+                    <span class="ntext">Home</span>
+                </a></li>
+                <li><a href="#abt" class="nitem">
+                    <span class="nicon"><i class="fas fa-user"></i></span>
+                    <span class="ntext">About</span>
+                </a></li>
+                <li><a href="#skl" class="nitem">
+                    <span class="nicon"><i class="fas fa-code"></i></span>
+                    <span class="ntext">Skills</span>
+                </a></li>
+                <li><a href="#proj" class="nitem">
+                    <span class="nicon"><i class="fas fa-briefcase"></i></span>
+                    <span class="ntext">Projects</span>
+                </a></li>
+                <li><a href="#cont" class="nitem">
+                    <span class="nicon"><i class="fas fa-envelope"></i></span>
+                    <span class="ntext">Contact</span>
+                </a></li>
             </ul>
             <div class="ncont">
-                <a href="mailto:nvthandev@proton.me" class="elink">
-                    <i class="fas fa-envelope"></i> nvthandev@proton.me
+                <a href="mailto:nvthandev@proton.me" class="elink pulse">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <a href="https://github.com" target="_blank" class="elink-gh">
+                    <i class="fab fa-github"></i>
                 </a>
             </div>
             <div class="menu">
@@ -57,63 +79,144 @@
     <main class="main">
         <section id="home" class="sect hero">
             <div class="cont">
-                <h1 class="htit">Hello I'm <span class="lblu">Nathan</span></h1>
-                <p class="hsub">16 Years Old Frontend Developer</p>
-                <p class="hdesc">I build websites with HTML CSS JS. Currently trying to expand my frontend skills.</p>
-                <div class="hbtn">
-                    <a href="#proj" class="btn prim">View my Projects</a>
-                    <a href="#cont" class="btn sec">Contact Me</a>
-                </div>
-                <div class="hcode">
-                    <div class="code">
-                        <pre><code>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="htit">
+                            Building <span class="text-glow">Websites</span>
+                            <span class="text-gradient">That Don't Suck</span>
+                        </h1>
+                        <p class="hsub">Hi, I'm <span class="highlight">Nathan</span> - Frontend Developer</p>
+                        <p class="hdesc">
+                            Passionate about creating beautiful and working websites.
+                        </p>
+                        <div class="hbtn">
+                            <a href="#proj" class="btn prim">
+                                <span>View Projects</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#cont" class="btn sec">
+                                <span>Get In Touch</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-value">3+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">2</div>
+                                <div class="stat-label">Years Coding</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">Self Taught</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="code-container">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="code-title">portfolio.js</span>
+                            </div>
+                            <pre><code class="language-javascript">
 const developer = {
     name: "Nathan",
     age: 16,
-    level: "Frontend Developer",
-    learning: "Being a More skilled Frontend",
-    skills: ["HTML", "CSS", "JS"],
-    project: "https://forcedentry.vercel.app/"
+    role: "Frontend Developer",
+    passion: "Learning and building experiences."
+    skills: ["HTML", "CSS", "JavaScript"],
+    focus: "Full Stack Web Development",
 };
-                        </code></pre>
+
+                            </code></pre>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="float-el el1"><i class="fab fa-html5"></i></div>
+                            <div class="float-el el2"><i class="fab fa-css3-alt"></i></div>
+                            <div class="float-el el3"><i class="fab fa-js"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="abt" class="sect abt">
             <div class="cont">
-                <h2 class="stit">About <span class="lblu">Me</span></h2>
+                <div class="section-header">
+                    <h2 class="stit">
+                        From <span class="text-gradient">Playing</span> to
+                        <span class="text-glow">Coding</span>
+                    </h2>
+                    <p class="ssub">How I went from playing games to making websites</p>
+                </div>
                 <div class="acont">
-                    <div class="atext">
-                        <p>I'm a 16-year-old self-taught developer who discovered my passion for coding. Starting with basic HTML and CSS, I've been teaching myself web development through online resources and hands-on projects.</p>
-                        <p>My journey has been about constant learning - from my first lines of code to building engaging websites. I'm now fully focusing on mastering frontend technologies to become a stronger, more skilled frontend developer.</p>
-                        <div class="ainfo">
-                            <div class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Germany</span>
-                            </div>
-                            <div class="info">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>Started at 13</span>
-                            </div>
-                            <div class="info">
-                                <i class="fas fa-eye"></i>
-                                <span>More skilled Frontend</span>
-                            </div>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>Hello I'm Nathan</h3>
+                            <p>
+                                Three years ago while gaming I saw a friend coding Got curious how it worked 
+                                so I decided to learn
+                            </p>
+                            <p>
+                                Now at 16 im building my own websites looking towards full stack web development still learning
+                                but making websites that work
+                            </p>
                         </div>
-                    </div>
-                    <div class="acard">
-                        <div class="prof">
-                            <div class="phead">
-                                <h3>Nathan</h3>
-                                <p>Frontend Developer</p>
-                                <div class="age">16 years old</div>
-                            </div>
-                            <div class="pinfo">
-                                <p><i class="fas fa-envelope"></i> nvthandev@proton.me</p>
-                                <p><i class="fas fa-code"></i>Frontend Developer</p>
-                                <p><i class="fas fa-eye"></i>Self Taught</p>
-                                <p><i class="fas fa-rocket"></i>Learning to be a more skilled Frontend</p>
+                        <div class="about-card">
+                            <div class="profile-card">
+                                <div class="profile-header">
+                                    <div class="profile-avatar">
+                                        <div class="avatar-ring"></div>
+                                        <div class="avatar-initial">N</div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <h3>Nathan</h3>
+                                        <p class="profile-role">Frontend Developer</p>
+                                        <div class="profile-location">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Germany</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-number">16</div>
+                                        <div class="stat-label">Age</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">3</div>
+                                        <div class="stat-label">Years into coding</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">∞</div>
+                                        <div class="stat-label">Passion</div>
+                                    </div>
+                                </div>
+                                <div class="profile-details">
+                                    <div class="detail">
+                                        <i class="fas fa-code"></i>
+                                        <span>Self Taught Developer</span>
+                                    </div>
+                                    <div class="detail">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>Learning React & Node.js & Tailwind CSS</span>
+                                    </div>
+                                    <div class="detail">
+                                        <i class="fas fa-bullseye"></i>
+                                        <span>Leaning into Full Stack Development</span>
+                                    </div>
+                                </div>
+                                <div class="profile-cta">
+                                    <a href="#cont" class="btn prim small">
+                                        <i class="fas fa-paper-plane"></i>
+                                        <span>Lets Connect</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -122,90 +225,127 @@ const developer = {
         </section>
         <section id="skl" class="sect skl">
             <div class="cont">
-                <h2 class="stit">My <span class="lblu">Skills</span></h2>
-                <p class="ssub">Click on any Icon</p>
-                <div class="learn">
-                    <h3><i class="fas fa-graduation-cap"></i> Currently Learning</h3>
+                <div class="section-header">
+                    <h2 class="stit">
+                        Technologies I <span class="text-gradient">Work</span> With
+                    </h2>
+                    <p class="ssub">Languages that help me build my websites</p>
+                </div>
+                <div class="learning-section">
+                    <div class="section-subheader">
+                        <h3>Mastering</h3>
+                        <p>Expanding my brain into using more languages</p>
+                    </div>
                     <div class="llist">
                         <div class="litem">
-                            <div class="licon react">
-                                <i class="fab fa-react"></i>
+                            <div class="licon-wrapper">
+                                <div class="licon react">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="lglow"></div>
                             </div>
                             <div class="linfo">
-                                <h4>React</h4>
-                                <p>Frontend library for modern UIs</p>
+                                <div class="linfo-header">
+                                    <h4>React</h4>
+                                    <span class="lperc">5%</span>
+                                </div>
+                                <p class="ldesc">Building user interfaces with react</p>
                                 <div class="lprog">
                                     <div class="pbar">
-                                        <div class="pfill" style="width: 5%"></div>
+                                        <div class="pfill" style="width: 5%">
+                                            <div class="pshine"></div>
+                                        </div>
                                     </div>
-                                    <span>5%</span>
                                 </div>
                             </div>
                         </div>
                         <div class="litem">
-                            <div class="licon twind">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" class="ticon">
-                                    <path fill="#06B6D4" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"/>
-                                </svg>
+                            <div class="licon-wrapper">
+                                <div class="licon twind">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" class="ticon">
+                                        <path fill="#06B6D4" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"/>
+                                    </svg>
+                                </div>
+                                <div class="lglow"></div>
                             </div>
                             <div class="linfo">
-                                <h4>Tailwind</h4>
-                                <p>Tailwind is a utility-first framework that lets me build modern websites quickly.</p>
+                                <div class="linfo-header">
+                                    <h4>Tailwind CSS</h4>
+                                    <span class="lperc">5%</span>
+                                </div>
+                                <p class="ldesc">CSS framework for quick development</p>
                                 <div class="lprog">
                                     <div class="pbar">
-                                        <div class="pfill" style="width: 5%"></div>
+                                        <div class="pfill" style="width: 5%">
+                                            <div class="pshine"></div>
+                                        </div>
                                     </div>
-                                    <span>5%</span>
                                 </div>
                             </div>
                         </div>
                         <div class="litem">
-                            <div class="licon node">
-                                <i class="fab fa-node-js"></i>
+                            <div class="licon-wrapper">
+                                <div class="licon node">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <div class="lglow"></div>
                             </div>
                             <div class="linfo">
-                                <h4>Node.js</h4>
-                                <p>JS runtime for backend</p>
+                                <div class="linfo-header">
+                                    <h4>Node.js</h4>
+                                    <span class="lperc">20%</span>
+                                </div>
+                                <p class="ldesc">Javascript backend framework</p>
                                 <div class="lprog">
                                     <div class="pbar">
-                                        <div class="pfill" style="width: 20%"></div>
+                                        <div class="pfill" style="width: 20%">
+                                            <div class="pshine"></div>
+                                        </div>
                                     </div>
-                                    <span>20%</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="scont">
-                    <div class="sgridc">
-                        <div class="sgrid" id="sgrid">
-                        </div>
+                <div class="skills-grid-section">
+                    <div class="section-subheader">
+                        <h3>My Stack</h3>
+                        <p>Click to explore each skill</p>
                     </div>
-                    <div class="sdet">
-                        <div class="scard">
-                            <div class="sicon" id="sicon">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <h3 id="sname">JS</h3>
-                            <p class="stype" id="stype">Programming Language</p>
-                            <div class="sprog">
-                                <div class="pbar">
-                                    <div class="pfill" id="pfill"></div>
+                    <div class="scont">
+                        <div class="sgridc">
+                            <div class="sgrid" id="sgrid"></div>
+                        </div>
+                        <div class="sdet">
+                            <div class="scard">
+                                <div class="scard-header">
+                                    <div class="sicon-large" id="sicon">
+                                        <i class="fab fa-html5"></i>
+                                        <div class="sicon-glow"></div>
+                                    </div>
+                                    <div class="stitles">
+                                        <h3 id="sname">HTML</h3>
+                                        <p class="stype" id="stype">Markup Language</p>
+                                    </div>
                                 </div>
-                                <div class="ptext">
-                                    <span id="plev">Intermediate</span>
-                                    <span id="pper">55%</span>
+                                <div class="scard-content">
+                                    <div class="sprog-section">
+                                        <div class="sprog-header">
+                                            <span id="plev">Advanced</span>
+                                            <span id="pper" class="sperc">80%</span>
+                                        </div>
+                                        <div class="sprog">
+                                            <div class="pbar">
+                                                <div class="pfill" id="pfill" style="width: 80%">
+                                                    <div class="pshine"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sdesc" id="sdesc">
+                                        Making websites that work properly
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sdesc" id="sdesc">
-                                Used to build interactive websites.
-                            </div>
-                            <div class="sproj">
-                                <h4>Used in Projects:</h4>
-                                <ul id="sproj">
-                                    <li>Forced Entry Website</li>
-                                    <li>This Portfolio</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -214,48 +354,67 @@ const developer = {
         </section>
         <section id="proj" class="sect proj">
             <div class="cont">
-                <h2 class="stit">My <span class="lblu">Project</span></h2>
-                <p class="ssub">Built website for a game Hunterz Studios is developing.</p>
-                <div class="pshow">
-                    <div class="pmain">
-                        <div class="pimg">
-                            <img src="image.png" alt="Forced Entry Website" class="pimgm">
-                            <div class="pover">
-                                <a href="https://forcedentry.vercel.app/" target="_blank" class="btn prim">
-                                    <i class="fas fa-external-link-alt"></i> Visit Site
+                <div class="section-header">
+                    <h2 class="stit">
+                        Projects That <span class="text-gradient">Showcase</span>
+                        <span class="text-glow">My Skills</span>
+                    </h2>
+                    <p class="ssub">Building things that actually work</p>
+                </div>
+                <div class="project-showcase">
+                    <div class="project-main">
+                        <div class="project-visual">
+                            <div class="project-image-container">
+                                <img src="image.png" 
+                                     alt="Forced Entry Website" 
+                                     class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://forcedentry.vercel.app/" target="_blank" class="btn prim">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                        <button class="btn sec" onclick="alert('Source code available on request!')">
+                                            <i class="fab fa-github"></i>
+                                            <span>View Code</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Forced Entry Website | Discontinued</h3>
+                            </div>
+                            <p class="project-description">
+                                Built a website for a game development studio.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag html">HTML</span>
+                                <span class="tech-tag css">CSS</span>
+                                <span class="tech-tag js">JavaScript</span>
+                            </div>
+                            </div>
+                            <div class="project-cta">
+                                <a href="https://forcedentry.vercel.app/" target="_blank" class="btn prim large">
+                                    <i class ="fas fa-eye"></i>
+                                    <span>Visit Project - Discontinued</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="pinfo">
-                            <h3>Forced Entry Website Discontinued</h3>
-                            <div class="ptech">
-                                <span class="ttag">HTML</span>
-                                <span class="ttag">CSS</span>
-                                <span class="ttag">JS</span>
-                            </div>
-                            <p class="pdesc">
-                                A fully responsive promotional website for Hunterz Studios' game, built with HTML, CSS, and JS
-                            </p>
-                            <div class="pfeat">
-                                <div class="feat">
-                                    <i class="fa-solid fa-desktop"></i>
-                                    <div>
-                                        <h4>Device</h4>
-                                        <p>Works on PC</p>
-                                    </div>
+                    </div>
+                    <div class="project-other">
+                        <h4>More Projects Coming Soon</h4>
+                        <p>Working on new projects</p>
+                        <div class="coming-soon">
+                            <div class="coming-card">
+                                <div class="coming-icon">
+                                    <i class="fas fa-wrench"></i>
                                 </div>
-                                <div class="feat">
-                                    <i class="fas fa-code"></i>
-                                    <div>
-                                        <h4>Code</h4>
-                                        <p>well organized & clean</p>
-                                    </div>
-                                </div>
+                                <h5>React Portfolio</h5>
+                                <p>I wanna rebuild my portfolio using react</p>
                             </div>
-                            <div class="plink">
-                                <a href="https://forcedentry.vercel.app/" target="_blank" class="plinkb">
-                                    <i class="fas fa-external-link-alt"></i> Visit Link Website
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -264,39 +423,78 @@ const developer = {
         </section>
         <section id="cont" class="sect cont">
             <div class="cont">
-                <h2 class="stit">Get in <span class="lblu">Touch</span></h2>
-                <p class="ssub">I'm always open to learning opportunities, feedback, or just a chat about coding!</p>
-                <div class="ccont">
-                    <div class="cmain">
-                        <div class="eicon">
-                            <i class="fas fa-envelope"></i>
+                <div class="section-header">
+                    <h2 class="stit">
+                        Lets <span class="text-gradient">Build</span>
+                        Something <span class="text-glow">Awesome</span>
+                    </h2>
+                    <p class="ssub">Im always open to learn new stuff or new opportunities</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-main">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-paper-plane"></i>
+                                <div class="contact-glow"></div>
+                            </div>
+                            <h3>Ready to Start a Project</h3>
+                            <p class="contact-description">
+                                Whether you need a developer i'd love to help
+                            </p>
+                            <a href="mailto:nvthandev@proton.me" class="contact-email">
+                                <i class="fas fa-envelope"></i>
+                                <span>nvthandev@proton.me</span>
+                            </a>
+                            <p class="contact-note">
+                                Lets create something together
+                            </p>
+                            <div class="contact-social">
+                                <a href="mailto:nvthandev@proton.me" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
-                        <h3>Email Me</h3>
-                        <a href="mailto:nvthandev@proton.me" class="elinkb">
-                            nvthandev@proton.me
-                        </a>
-                        <p class="cnote">Feel free to reach out for collaboration, advice, or just to connect!</p>
                     </div>
-                    <div class="clink">
-                        <div class="citem">
-                            <i class="fas fa-globe"></i>
-                            <div>
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="info-content">
                                 <h4>My Domain</h4>
-                                <a href="https://nvthan.dev" target="_blank">nvthan.dev</a>
+                                <a href="https://nvthan.dev" target="_blank" class="info-link">nvthan.dev</a>
                             </div>
                         </div>
-                        <div class="citem">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>My Project</h4>
-                                <a href="https://forcedentry.vercel.app/" target="_blank">forcedentry.vercel.app</a>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Latest Project</h4>
+                                <a href="https://forcedentry.vercel.app/" target="_blank" class="info-link">
+                                    forcedentry.vercel.app
+                                </a>
                             </div>
                         </div>
-                        <div class="citem">
-                            <i class="fas fa-user"></i>
-                            <div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="info-content">
                                 <h4>About Me</h4>
                                 <p>16 year old frontend developer</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Based in Germany</p>
                             </div>
                         </div>
                     </div>
@@ -305,10 +503,23 @@ const developer = {
         </section>
         <section id="rev" class="sect rev">
             <div class="cont">
-                <h2 class="stit">What <span class="lblu">Friends Say</span></h2>
-                <p class="ssub">Reviews from people who know my work</p>
-                <div class="rcont">
-                    <div class="rslide" id="rslide">
+                <div class="section-header">
+                    <h2 class="stit">
+                        What <span class="text-gradient">Others</span> Say
+                    </h2>
+                    <p class="ssub">Reviews from people who know my work</p>
+                </div>
+                <div class="testimonials-container">
+                    <div class="testimonials-slider" id="rslide">
+
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -316,22 +527,56 @@ const developer = {
     </main>
     <footer class="foot">
         <div class="cont">
-            <div class="fcont">
-                <div class="flogo">
-                    <span class="ltxt">NVTHAN</span><span class="lblu">.DEV</span>
-                    <p class="fmoto">Learning to be a more skilled Frontend</p>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="flogo-text">NVTHAN<span class="flogo-dot">.</span>DEV</span>
+                        </div>
+                        <p class="footer-motto">
+                            Leaning into Full Stack Development
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h5>Navigate</h5>
+                            <a href="#home">Home</a>
+                            <a href="#abt">About</a>
+                            <a href="#skl">Skills</a>
+                            <a href="#proj">Projects</a>
+                            <a href="#cont">Contact</a>
+                        </div>
+                        <div class="link-group">
+                            <h5>Connect</h5>
+                            <a href="mailto:nvthandev@proton.me">Email</a>
+                            <a href="https://github.com" target="_blank">GitHub</a>
+                        </div>
+                        <div class="link-group">
+                            <h5>Resources</h5>
+                            <a href="https://forcedentry.vercel.app/" target="_blank">Forced Entry</a>
+                            <a href="#proj">My Work</a>
+                            <a href="#skl">Skills</a>
+                            <a href="#cont">Contact Me</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flink">
-                    <a href="#home">Home</a>
-                    <a href="#abt">About</a>
-                    <a href="#skl">Skills</a>
-                    <a href="#proj">Project</a>
-                    <a href="#cont">Contact</a>
+                <div class="footer-bottom">
+                    <div class="footer-copy">
+                        <p>Nathan</p>
+                        <p>You're frontend developer</p>
+                    </div>
+                    <div class="footer-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
                 </div>
             </div>
-            <div class="fbot">
-                <p>Built with HTML CSS & JS</p>
-            </div>
+        </div>
+        <div class="footer-back-to-top">
+            <a href="#home" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </div>
     </footer>
     <script src="index.js"></script>
